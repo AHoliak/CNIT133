@@ -1,0 +1,43 @@
+
+.btn {
+  border:none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; 
+}
+.btn:hover {background: #eee;}
+.home {color: palevioletred;}
+.projects {color: salmon;}
+.contact {color: lightpink;}
+
+/* Green */
+.home {
+  color: lavender;
+}
+
+.home:hover {
+  background-color: palevioletred;
+  color: white;
+}
+/* Orange */
+.projects {
+  color: salmon;
+}
+
+.projects:hover {
+  background: salmon;
+  color: white;
+}
+/*Red*/
+.contact {
+  color: lightpink;
+}
+
+.contact:hover {
+  background: lightpink;
+  color: white;
+}
+
+
