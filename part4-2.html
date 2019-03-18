@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Homework  - Looping Statements">
+  <meta name="description" content="Looping Statements">
+  <meta name="author" content="Anastasiia Holiak">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="hw2parts.css">
+  <script src="hw4part2.js"></script>   
+  <title>Looping Statements</title>
+  <style>
+
+       
+table{
+	width: 300px;
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+
+tr.alternate {
+        background-color: gainsboro;
+}
+
+tr{
+	text-align: right;
+	background-color: mediumvioletred;
+}
+
+
+th{
+	text-align: center;
+	background-color: orange;
+}
+
+td {
+	border: 1px solid black;
+	text-align: right;
+	padding: 10px;
+}
+
+</style>
+  </head>
+ <body>
+  <nav id="nav">
+    <ul>
+	  <li><a href="part4-1.html">Part 1</a></li>
+      <li><a href="part4-2.html">Part 2</a></li>
+      <li><a href="extracredit4.html">Part 3</a></li>
+    </ul>
+  </nav>
+     <section class="container">
+
+		<br><h3>Interest Rates</h3><br>
+
+		<script>
+          var rate = 0.05;
+          for( var j = 5; j <= 10; j ++)
+			{
+				document.write( 
+				"<br><table id=\"interest\">" +
+  				"<tr>" +
+				"<th>Year</th>" +
+				"<th>Amount on deposit</th>" +
+				"<th>Interest Rate</th>" +
+			    "</tr>");
+			  
+				for ( var i = 1; i <= 10; i++ ) 
+				{ 
+					document.write( "<tr>" );
+				    document.write("<td>" + i + "</td>" );
+					document.write( "<td>" + (1000 * Math.pow(( 1 + rate ), i)).toFixed(2) + "</td>" );
+					document.write( "<td>" + rate.toFixed(2) + "</td>" );
+			        document.write( "</tr>" ); 
+			 	}
+			 	document.write( "</table><br>" );
+			 	rate += 0.01;
+            }
+	</script>
+	 <script>
+      		$(function() {
+        		$("table tr:nth-child(even)").addClass("alternate");
+      		});
+     </script>
+     </section>
+     <br>
+     <br>
+	 <footer class="copy"><p>&copy; Anastasiia Holiak</p></footer>
+</body>
+</html>

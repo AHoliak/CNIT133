@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Homework 4 - Looping Statements">
+  <meta name="description" content="Looping Statements">
+  <meta name="author" content="Anastasiia Holiak">
+  <link rel="stylesheet" href="hw2parts.css">   
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="hw4part1.js"></script>
+  <title>Looping Statements</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>  
+</head>
+ <body>
+  <nav id="nav">
+    <ul>
+	  <li><a href="part4-1.html">Part 1</a></li>
+      <li><a href="part4-2.html">Part 2</a></li>
+      <li><a href="extracredit4.html">Extra credit</a></li>
+    </ul>
+  </nav>
+     <h3>Press "calculate" to see results =D</h3>
+  <section class="container">
+	  <form name="myform">
+      <br>
+      <div id="sum" class="box"> Sum (5 to 20) :</div>
+      <br>
+      <div id="product" class="box">Product (5 to 20):</div>
+	  <br>
+      <div id="sum2" class="box">Sum (3 to 31):</div>
+      <br>
+      <div id="product2" class="box">Product (3 to 31):</div>
+      <br>
+        <input type="button" onclick="calculate()" value="Calculate">
+        <input type="reset" value="RESET" onclick="window.location.reload();"><br>
+      <br>
+      <h2 id="draggable" class="ui-widget-content">(Draggable) Results:</h2><br>
+      <textarea  rows="7" cols="60" name="result"></textarea>
+            <br><br>
+    </form>	
+  </section>
+  <footer class="copy"><p>&copy; Anastasiia Holiak</p></footer>
+</body>
+</html>

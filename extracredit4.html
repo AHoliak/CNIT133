@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Homework 4 - Looping Statements">
+  <meta name="description" content="Looping Statements">
+  <meta name="author" content="Anastasiia Holiak">
+  <link rel="stylesheet" href="hw2parts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="extracredit4.js"></script>
+  <title>Looping Statements</title>
+    <style>
+.starsquare {
+	font-family: sans-serif;
+	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	background-color:  lightsalmon;
+	margin: 0px auto;
+}
+
+.error { 
+	font: normal 14px arial; 
+	margin: 0px auto; 
+	color: mediumvioletred; 
+	display: block;
+}
+   </style>
+</head>
+<body>
+  <nav id="nav">
+    <ul>
+	  <li><a href="part4-1.html">Part 1</a></li>
+      <li><a href="part4-2.html">Part 2</a></li>
+      <li><a href="extracredit4.html">Extra credit</a></li>
+    </ul>
+  </nav>
+    <section class="container">
+		<br><h3>Star Box</h3><br>
+        <form id="myform" name="myform">
+			<label for="num">How many stars would you like to apply?: </label><br><br>
+			<p class="error"><input type="text" id="num" name="num" size="5" autofocus></p>
+			<br><input type="button" onclick="process()" value="Submit">
+		</form>
+        <br><br><div id="boxarea" class="starsquare"></div>
+        <br><br><br>
+	 </section>
+    <footer class="copy"><p>&copy; Anastasiia Holiak</p></footer>
+    </body>
+</html>
